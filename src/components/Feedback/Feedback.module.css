@@ -1,0 +1,11 @@
+.feedback {
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px;
+    width: 800px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 5px 5px 10px 5px #0ec87130;
+    background-color: rgb(152, 151, 151)
+}

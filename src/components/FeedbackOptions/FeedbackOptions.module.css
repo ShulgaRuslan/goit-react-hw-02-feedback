@@ -1,0 +1,21 @@
+
+
+.feedback__btn {
+    width: 70px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    background-color: teal;
+}
+.feedback__btn {
+    margin-right: 15px;
+}
+.feedback__btn:hover {
+    background-color: white;
+    color: rgb(63, 184, 231);
+    cursor: pointer;
+}
