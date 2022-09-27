@@ -18,5 +18,7 @@ export default function FeedbackOptions({ leaveFeedback }) {
   );
 }
 FeedbackOptions.propTypes = {
-  onClick: PropTypes.func
+  leaveFeedback: PropTypes.func
 }
+
+

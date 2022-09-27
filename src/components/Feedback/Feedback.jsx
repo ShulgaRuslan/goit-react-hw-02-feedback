@@ -22,8 +22,10 @@ export default class Feedback extends Component {
     });
   };
   countTotalFeedback() {
-    const { good, neutral, bad } = this.state;
-    return good + neutral + bad;
+    const values = Object.values(this.state);
+    return values.reduce((previousValue, number) => {
+      return previousValue + number;
+    }, 0);
   }
 
   countPositiveFeedbackPercentage() {
@@ -61,13 +63,4 @@ export default class Feedback extends Component {
       </div>
     );
   }
-}
-Feedback.propTypes = {
-  good : PropTypes.number,
-  neutral :PropTypes.number,
-  bad: PropTypes.number,
-  leaveFeedback: PropTypes.func,
-  countTotalFeedback: PropTypes.func,
-  countPositiveFeedbackPercentage: PropTypes.func,
-
 }
